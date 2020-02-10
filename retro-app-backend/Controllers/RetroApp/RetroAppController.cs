@@ -19,30 +19,30 @@ namespace retro_app_backend.Controllers.RetroApp
             return View("../Index");
         }
 
-        //TO DO: Room Controller for this where the base route is /room then cut and paste this here
-        //Then create a post with route "board" where the user can post to the board with a post it
-        [Route("submit")]
-        [HttpPost]
-        public async Task<IActionResult> CreateRoom([FromBody] RetroAppDataModel model)
-        {
-            if(string.IsNullOrEmpty(model.FirstName))
-            {
-                return BadRequest();
-            }
+        ////TO DO: Room Controller for this where the base route is /room then cut and paste this here
+        ////Then create a post with route "board" where the user can post to the board with a post it
+        //[Route("submit")]
+        //[HttpPost]
+        //public async Task<IActionResult> CreateRoom([FromBody] RetroAppDataModel model)
+        //{
+        //    if(string.IsNullOrEmpty(model.FirstName))
+        //    {
+        //        return BadRequest();
+        //    }
 
-            string pin = Guid.NewGuid().ToString();
+        //    string pin = Guid.NewGuid().ToString();
 
-            pin = pin.Substring(0, 6);
+        //    pin = pin.Substring(0, 6);
 
-            RetroRoom room = new RetroRoom
-            {
-                Pin = pin,
-                RoomCreator = model.FirstName
-            };
+        //    RetroRoom room = new RetroRoom
+        //    {
+        //        Pin = pin,
+        //        RoomCreator = model.FirstName
+        //    };
 
-            _rooms.Add(room);
+        //    _rooms.Add(room);
 
-            return Ok(pin);
-        }
+        //    return Ok(pin);
+        //}
     }
 }

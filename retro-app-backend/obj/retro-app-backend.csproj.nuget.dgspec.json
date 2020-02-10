@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\code\\retro-app-backend\\retro-app-backend\\retro-app-backend.csproj": {}
+    "C:\\Users\\Jordan\\Documents\\code\\retro-app-backend\\retro-app-backend\\retro-app-backend.csproj": {}
   },
   "projects": {
-    "C:\\code\\retro-app-backend\\retro-app-backend\\retro-app-backend.csproj": {
+    "C:\\Users\\Jordan\\Documents\\code\\retro-app-backend\\retro-app-backend\\retro-app-backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\code\\retro-app-backend\\retro-app-backend\\retro-app-backend.csproj",
+        "projectUniqueName": "C:\\Users\\Jordan\\Documents\\code\\retro-app-backend\\retro-app-backend\\retro-app-backend.csproj",
         "projectName": "retro-app-backend",
-        "projectPath": "C:\\code\\retro-app-backend\\retro-app-backend\\retro-app-backend.csproj",
-        "packagesPath": "C:\\Users\\jordan.burns\\.nuget\\packages\\",
-        "outputPath": "C:\\code\\retro-app-backend\\retro-app-backend\\obj\\",
+        "projectPath": "C:\\Users\\Jordan\\Documents\\code\\retro-app-backend\\retro-app-backend\\retro-app-backend.csproj",
+        "packagesPath": "C:\\Users\\Jordan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jordan\\Documents\\code\\retro-app-backend\\retro-app-backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\jordan.burns\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jordan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,7 +25,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://scndevtools.stockport.gov.uk:1980/guestAuth/app/nuget/v1/FeedService.svc/": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
