@@ -47,20 +47,23 @@ namespace retro_app_backend.Controllers.RetroApp
                 return BadRequest();
             }
 
-            var room = _rooms.Select(x => x).Where(y => y.Pin == model.PinToJoin).FirstOrDefault();
-
-            room.Attendees.Add(model.FirstName);
-
+            if(_rooms.Select(x => x).Where(y => y.Pin == model.PinToJoin).FirstOrDefault() != null)
+            {
+                _rooms.Select(x => x).Where(y => y.Pin == model.PinToJoin).FirstOrDefault().Attendees.Add(model.FirstName);
+            }
+            else
+            {
+                return BadRequest();
+            }
+            
             return Ok();
         }
 
-        [Route("/board/post")]
+        [Route("board")]
         [HttpPost]
         public async Task<IActionResult> PostToBoard([FromBody] RetroAppDataModel model)
         {
-            var room = _rooms.Select(x => x).Where(y => y.Pin == model.Pin).FirstOrDefault();
-
-            room.Messages.Add(model.Message);
+            _rooms.Select(x => x).Where(y => y.Pin == model.Pin).FirstOrDefault().Messages.Add(model.Message);
 
             return Ok();
         }
